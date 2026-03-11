@@ -57,7 +57,7 @@ st.markdown("""
 # -----------------------------
 # Sidebar Profile Section
 # -----------------------------
-asher_pic_base64 = get_image_base64("GTINN.jpeg") # Using uploaded profile pic
+asher_pic_base64 = get_image_base64("asher_picture.png") # Using uploaded profile pic
 github_url = "https://github.com/asherjc-creator/georgetown-revenue-dashboard"
 
 with st.sidebar:
@@ -78,7 +78,7 @@ with st.sidebar:
 # -----------------------------
 # Header / Title Section
 # -----------------------------
-logo_base64 = get_image_base64("GTINN.jpeg")
+logo_base64 = get_image_base64("logo.png")
 
 if logo_base64:
     st.markdown(f"""
@@ -200,4 +200,5 @@ elif latest_occ > 0.75:
     st.info(f"Moderate demand. Suggested ADR: ${suggested_rate:.0f}")
 else:
     suggested_rate = latest_adr * 0.92
+
     st.warning(f"Low demand. Suggested ADR: ${suggested_rate:.0f}")
