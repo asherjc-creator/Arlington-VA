@@ -4,6 +4,4 @@ numpy
 plotly
 folium
 streamlit-folium
-requests
-beautifulsoup4
-pillow
+Pillow
